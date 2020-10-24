@@ -1,0 +1,11 @@
+<form class="form">
+  <div class="form-group">
+    <label for="uname1">Marvellous Member Name</label>
+    <input type="text" class="form-control rounded-0" [(ngModel)]="loginUserData.email" name="email"  required>
+  </div>
+  <div class="form-group">
+    <label>Registration ID</label>
+    <input type="password" class="form-control rounded-0" [(ngModel)]="loginUserData.password" name="password" required>
+  </div>
+  <button type="button" (click)="loginUser()" class="btn btn-success float-right">Login</button>
+</form>
